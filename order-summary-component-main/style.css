@@ -1,0 +1,123 @@
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+  }
+  body {
+    --dark-blue: hsl(223, 47%, 23%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  .center-text {
+    text-align: center;
+  }
+  main { 
+    background: url("../images/pattern-background-mobile.svg") #e0e8ff no-repeat;
+    background-position: center top;
+    background-size: contain;
+    padding: 32px 0;    
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    background-image: url('../images/pattern-background-desktop.svg');
+  }
+}
+  .card {
+    background-color: #fff;
+    border-radius: 22px;
+    margin: 60px auto;
+    max-width: 450px;
+    overflow: hidden;
+}
+  .card h2 {
+  padding-bottom: 10px;
+  font-size: 26px;
+  margin-top: 30px;
+}
+  .card .summary-description {
+  font-size: 16px;
+  padding: 10px 50px;
+  color: var(--desaturated-blue);
+  align-items: center;
+}
+
+.card .info {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  margin: 20px 30px; 
+  border-radius: 10px;
+  padding: 1em;
+  align-items: center;
+}
+
+.card .info .info-plan {
+  text-align: left;
+  margin-left: 16px;
+  flex-grow: 1;
+}
+
+
+.card .info a {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  font-weight: bolder;
+  cursor: pointer;
+ 
+}
+
+.card .info a:hover{
+  opacity: .5;
+  transition: .3s all;
+  text-decoration: none;
+}
+.card .Payment{
+  background: var(--bright-blue);
+  display: block;
+  color: #fff;
+  padding: 14px;
+  box-shadow: 0 15px 35px -20px var(--bright-blue); 
+  margin: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card .Payment:hover{
+  opacity: .6;
+  transition: .3s all;
+  
+}
+
+.card .Cancel{
+  background: transparent;
+  display: block;
+  color: var( --desaturated-blue);
+  margin:25px 0 55px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card .Cancel:hover{
+  color:black;
+  transition: .3s all;
+}
+@media (max-width: 446px) {
+  .card {
+      margin: 72px 20px;
+  }
+  .card .info .left {
+      justify-content: center;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
