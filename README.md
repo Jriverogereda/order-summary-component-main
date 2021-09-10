@@ -1,8 +1,8 @@
 # order-summary-component-main
   Order summary component using HTML and CSS
   
-![](./desktop-design.jpg)
+![](./design/desktop-design.jpg)
 
-![](./desktop-preview.jpg)
+![](./design/desktop-preview.jpg)
 
-![](./mobile-design.jpg)
+![](./design/mobile-design.jpg)
